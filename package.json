@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mobius1/Pageable.git"
+    "url": "https://github.com/Cynthiamf/CV-WEB"
   },
   "keywords": [
     "slider"
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Mobius1/Pageable/issues"
   },
-  "homepage": "https://github.com/Mobius1/Pageable#readme",
+  "homepage": "https://github.com/Cynthiamf/CV-WEB#readme",
   "devDependencies": {
     "jasmine": "^3.0.0",
     "karma": "^2.0.0",
