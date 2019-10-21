@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to My resume online 👋</h1>
+<h1 align="center">Welcome to My Resume Online 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/Mobius1/Pageable#readme" target="_blank">
@@ -51,7 +51,5 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2019 [Cynthia Martiny](https://github.com/Cynthiamf).<br />
-This project is [MIT](https://github.com/Mobius1/Pageable/blob/master/LICENSE) licensed.
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
