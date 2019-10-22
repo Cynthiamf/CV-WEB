@@ -342,7 +342,7 @@ nav ul li:hover a span {
   padding-bottom: 40px;
 }
 
-img {
+.photo-id {
   object-position: 50% 50%;
   width: 140px;
   height: 140px;
@@ -533,4 +533,105 @@ ul.tl li .timestamp {
   font-size: 12px;
 }
 
-/* END EDUCATION & EXPERIENCES
+/* END EDUCATION & EXPERIENCES */
+
+/* SKILLS & LANGUAGES */
+
+.skills {
+  width: 75%;
+  margin: 100px auto 0 auto;
+}
+
+.title {
+  letter-spacing: 0.15em;
+  color: #321c0e;
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  font-weight: 400 !important;
+}
+
+.subtitle {
+  letter-spacing: 0.15em;
+  color: #321c0e;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  /*width: 75%;*/
+  height: 50%;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.border {
+  border-bottom: rgba(50, 28, 14, 0.3) solid 1px;
+  width: 7.5%;
+  margin-bottom: 50px;
+}
+
+.logo-language {
+  width: 10%;
+  text-align: center;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.logo-lg {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.wp,
+.laravel {
+  object-fit: cover;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.name-language {
+  width: 25%;
+}
+
+.progress {
+  position: relative;
+  width: 75%;
+  height: 1px;
+  background-color: rgba(50, 28, 14, 0.3);
+}
+
+
+.progress::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  top: -1px;
+  background-color: rgba(50, 28, 14, 1);
+}
+
+.progress.french::before {
+  width: 100%;
+}
+
+.progress.english::before {
+  width: 70%;
+}
+
+.progress.spanish::before {
+  width: 60%;
+}
+
+
+
+/* END SKILLS & LANGUAGES */
