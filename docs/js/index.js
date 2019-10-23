@@ -1,5 +1,22 @@
 "use strict";
 
+const collaps = document.querySelectorAll(".collapse-menu");
+
+collaps.forEach(collap => {
+  collap.addEventListener("click", () => {
+    let collapMenu = collap.querySelector(".menu");
+    let collapMenuWrapper = collap.querySelector(".menu-wrapper");
+
+    if (collap.classList.contains("open")) {
+      collapMenuWrapper.style.height = 0;
+      collap.classList.remove("open");
+    } else {
+      collapMenuWrapper.style.height = collapMenu.clientHeight + "px";
+      collap.classList.add("open");
+    }
+  });
+});
+
 const anchors = document.querySelector(".anchors");
 
 const pageable = new Pageable("main", {

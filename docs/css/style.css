@@ -65,11 +65,15 @@ section:nth-child(3) .text {
 }
 
 section:nth-child(4) .text {
-  background-color: #bcaaa4;
+  background-color: #d7ccc8;
 }
 
 section:nth-child(5) .text {
-  background-color: #d7ccc8;
+  background-color: #efebe9;
+}
+
+section:nth-child(6) .text {
+  background-color: #efdcd5;
 }
 
 
@@ -559,6 +563,7 @@ ul.tl li .timestamp {
 }
 
 .logos-container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   /*width: 75%;*/
@@ -568,16 +573,36 @@ ul.tl li .timestamp {
 }
 
 .border {
-  border-bottom: rgba(50, 28, 14, 0.3) solid 1px;
-  width: 7.5%;
+  text-align: center;
+  position: relative;
   margin-bottom: 50px;
 }
 
-.logo-language {
+.border a {
+  color: rgba(50, 28, 14, 1);
+  text-decoration: none;
+}
+
+.border::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  height: 1px;
+  width: 20%;
+  background-color: rgba(50, 28, 14, 0.3);
+}
+
+.level-details {
   width: 10%;
   text-align: center;
   margin-right: 30px;
   margin-bottom: 20px;
+}
+
+.logo-language {
+  position: relative;
 }
 
 .logo-lg {
@@ -596,6 +621,7 @@ ul.tl li .timestamp {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  color: rgba(50, 28, 14, 0.5);
 }
 
 .name-language {
@@ -632,6 +658,117 @@ ul.tl li .timestamp {
   width: 60%;
 }
 
+.apercu {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  display: none;
+  width: 70px;
+  height: 20px;
+  background: rgba(133, 92, 72);
+}
+
+
+.logo-language:hover .apercu {
+  display: block;
+}
+
+.level-details:hover .level {
+  display: block;
+}
+
+.level {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  display: none;
+  font-style: italic;
+  font-size: 12px;
+}
 
 
 /* END SKILLS & LANGUAGES */
+
+
+
+/* PROJECTS */
+
+/* END PROJECTS */
+
+
+
+/* EXTRA-PROFESSIONAL ACTIVITIES */
+
+.collapse-menu {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  /* background-color: rgba(161, 136, 127); */
+  padding: 30px 20px 20px 20px;
+  border-bottom: rgba(133, 92, 72, 0.5) solid 1px;
+}
+
+.collapse-menu .menu-wrapper {
+  height: 0px;
+  transition: height 0.35s;
+  -moz-transition: height 0.35s;
+  -webkit-transition: height 0.35s;
+  -o-transition: height 0.35s;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+  font-size: 20px;
+  font-style: italic;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 10px;
+  letter-spacing: normal;
+  background-color: #efdcd5;
+  text-transform: initial;
+  color: rgb(133, 107, 106);
+  /*padding: 10px;*/
+}
+
+.collapse-menu.open .menu-wrapper {
+  overflow: auto;
+  overflow-y: auto;
+}
+
+.collapse-menu .menu li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.activities-container {
+  padding-top: 80px;
+  width: 50%;
+  margin: 0 auto;
+
+  color: #321c0e;
+  font-family: "Quicksand", sans-serif;
+}
+
+.number {
+  color: #B49594;
+}
+
+.collapse-menu-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  font-size: 1rem;
+  color: #321c0e;
+  transition: transform 0.35s ease-in-out;
+}
+
+.collapse-menu.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* END EXTRA-PROFESSIONAL ACTIVITIES */
