@@ -8,25 +8,7 @@
 
 > Here is my resume made with HTML5/CSS3/JavaScript
 
-### 🏠 [Homepage](https://github.com/Cynthiamf/CV-WEB)
-
-## Install
-
-```sh
-npm install
-```
-
-## Usage
-
-```sh
-npm start
-```
-
-## Run tests
-
-```sh
-npm run test
-```
+### 🏠 [Homepage](https://marti-ny.me)
 
 ## Author
 
