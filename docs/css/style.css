@@ -425,7 +425,7 @@ ul {
 
 .about-title {
   font-size: 32px;
-  margin: 120px auto 30px;
+  margin: 120px auto 40px;
   width: 70%;
   letter-spacing: 0.3rem;
 
@@ -438,7 +438,8 @@ ul {
   width: 70%;
   margin: 0 auto;
   line-height: 2rem;
-
+  border-style: outset;
+  border-width: 5px;
 }
 
 /* END ABOUT PAGE */
@@ -826,3 +827,76 @@ ul.tl li .timestamp {
 }
 
 /* END EXTRA-PROFESSIONAL ACTIVITIES */
+
+/* CONTACT*/
+
+.form-container {
+  margin-top: 100px;
+  width: 50%;
+  padding: 4px;
+  vertical-align: top;
+  margin: 100px auto;
+  color: #321c0e;
+}
+
+.form-container label {
+  font-size: 15px;
+  width: 48%
+}
+
+
+.form-container .fields-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.form-container input,
+.form-container textarea {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 15px;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-top: 4px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.form-container textarea {
+  height: 6rem;
+}
+
+.form-container h3 {
+  letter-spacing: 0.15rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.bubble {
+  width: 24px;
+  height: auto;
+}
+
+.form-container button {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #725b53;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* END CONTACT */

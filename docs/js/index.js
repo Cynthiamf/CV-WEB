@@ -17,6 +17,33 @@ collaps.forEach(collap => {
   });
 });
 
+const formFields = document.querySelectorAll("input, textarea");
+if (formFields.length > 0) {
+  formFields.forEach(field => {
+    field.addEventListener("click", () => {
+      field.focus();
+    });
+  });
+}
+
+const textAreas = document.querySelectorAll("textarea");
+
+if (textAreas) {
+  textAreas.forEach(textarea => {
+    textarea.addEventListener("input", event => {
+      let textAreaCounter = textarea.parentNode.querySelector(
+        ".textarea-counter"
+      );
+      textAreaCounter.innerText = `${textarea.value.length} / 1000`;
+
+      let charsLeft = 999 - textarea.value.length;
+      if (charsLeft < 0) {
+        textarea.value = textarea.value.slice(0, 999);
+      }
+    });
+  });
+}
+
 const anchors = document.querySelector(".anchors");
 
 const pageable = new Pageable("main", {
@@ -26,16 +53,12 @@ const pageable = new Pageable("main", {
   // easing: easings.easeOutBounce,
   onInit: init,
   onBeforeStart: function(x, y) {
-    console.log("Start:", x, y);
     this.pages.forEach((page, i) => {
       page.firstElementChild.classList.remove("active");
     });
   },
-  onScroll: function(y) {
-    console.log("Scroll:", Math.round(y));
-  },
+  onScroll: function(y) {},
   onFinish: function(data) {
-    console.log("Finish:", data);
     this.pages.forEach((page, i) => {
       page.firstElementChild.classList.toggle("active", i === this.index);
 

@@ -18,7 +18,7 @@
       href="https://unpkg.com/rangeable@latest/dist/rangeable.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300|Nunito+Sans:300|Nunito:300|Quicksand:300,400|Raleway:300|Titillium+Web:300|Work+Sans:300&display=swap"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300|Nunito+Sans:300|Nunito:300|Quicksand:300,400,600|Raleway:300|Titillium+Web:300|Work+Sans:300&display=swap"
       rel="stylesheet"
     />
     <link
@@ -104,9 +104,24 @@
         <div class="text">
           <div class="about-text">
             <div class="about-title">ABOUT</div>
-            <div class="about-details">Hello, Cynthia, 28 years old, <strong>Junior front-end developer</strong>. Currently looking for an <strong>internship</strong> to validate my 7-month training at <strong>BeCode</strong>. Following this new challenge, it turned out that I had more affinity with the <strong>front end</strong> than the back end. Rigorous in my work and constantly with a thirst for learning, I'm always ready to fly to new horizons and I'm excited to start a new life in <strong>web development</strong>. I'm a perfectionist, I like work that is accomplished and well done. Work and the unknown don't scare me. 
-              For the last 3 years, I have been working as an order packer. Thanks to this, I realized that I knew how to work under pressure, while not neglecting the quality of my work. I'm as capable of working in a team as I'm of working on my own. I'm looking for an internship/work experience in a dynamic, friendly and ambitious team. If you'd like more information about my experiences and/or skills, I invite you to browse my web page.</div>
-            
+            <div class="about-details">
+              Hello I'm Cynthia. I'm 28 years old and I'm a
+              <strong>Junior front-end developer</strong>. Currently looking for
+              an <strong>internship</strong> to validate my 7-month training at
+              <strong>BeCode</strong>. During this new challenge, I found out
+              that I preferred the <strong>front end</strong>. Rigorous in my
+              work and with a constant thirst for learning. Always pushing
+              myself to the limit I'm excited about starting a new journey in
+              <strong>web development</strong>. I'm a perfectionist, I like work
+              that is accomplished and well done. Working in the unknown doesn't
+              scare me. <br /><br />For the last 3 years, I have been working as
+              an order packer. Thanks to this, I realized that I know how to
+              work under pressure, while not neglecting the quality of my work.
+              I'm as capable of working in a team as working on my own. I'm
+              looking for an internship/work experience in a dynamic, friendly
+              and ambitious team. If you'd like more information about my
+              experiences and/or skills, I invite you to visit my web page.
+            </div>
           </div>
         </div>
       </section>
@@ -400,7 +415,8 @@
             <div class=" bloc-project">
               <a
                 class="link-project"
-                href="https://todo-list-fabcy.herokuapp.com" target="_blank"
+                href="https://todo-list-fabcy.herokuapp.com"
+                target="_blank"
               >
                 <img
                   class="img-project"
@@ -409,42 +425,56 @@
                 />
               </a>
 
-              <div class="title-project"><h1>Todo-List</h1>
-              <h4>Use this web app to save your tasks</h4></div>
+              <div class="title-project">
+                <h1>Todo-List</h1>
+                <h4>Use this web app to save your tasks</h4>
+              </div>
             </div>
             <div class="bloc-project">
-              <a
-                class="link-project"
-                href="https://trouvkach.herokuapp.com"
-              >
-                <img class="img-project" src="../docs/img/Trouvkash.png" alt="" target="_blank"
+              <a class="link-project" href="https://trouvkach.herokuapp.com" target="_blank">
+                <img
+                  class="img-project"
+                  src="../docs/img/Trouvkash.png"
+                  alt=""
               /></a>
-              <div class="title-project"><h1>Trouvkash</h1>
-                  <h4>Find the ATM closest to your location (not finished)</h4>
+              <div class="title-project">
+                <h1>Trouvkash</h1>
+                <h4>Find the ATM closest to your location (not finished)</h4>
               </div>
             </div>
             <div class="bloc-project">
               <a
                 class="link-project"
                 href="https://pomodoro-cynthia.netlify.com/"
+                target="_blank"
               >
-                <img class="img-project" src="../docs/img/Pomodoro.png" alt="" target="_blank"
+                <img
+                  class="img-project"
+                  src="../docs/img/Pomodoro.png"
+                  alt=""
               /></a>
               <div class="title-project">
-                  <h1>Pomodoro</h1>
-                  <h4>Use this timer to optimize your working session</h4></div>
+                <h1>Pomodoro</h1>
+                <h4>Use this timer to optimize your working session</h4>
+              </div>
             </div>
             <div class="bloc-project">
               <a
                 class="link-project"
                 href="https://becode-bookshelves.netlify.com/"
+                target="_blank"
               >
-                <img class="img-project" src="../docs/img/Bookshelf.png" alt="" target="_blank"
+                <img
+                  class="img-project"
+                  src="../docs/img/Bookshelf.png"
+                  alt=""
               /></a>
               <div class="title-project">
-                  <h1>Bookshelf</h1>
-                  <h4>Bookshelf is BeCode's internal library. If you are a Becodian, <br>you can log in and lent books from the campus.</h4></div>
-                  
+                <h1>Bookshelf</h1>
+                <h4>
+                  Bookshelf is BeCode's internal library. If you are a Becodian,
+                  <br />you can log in and lent books from the campus.
+                </h4>
               </div>
             </div>
           </div>
@@ -624,8 +654,54 @@
           </div>
         </div>
       </section>
-      <section data-anchor="Contact">
-        <div class="text"></div>
+      <section  data-anchor="Contact">
+        <div class="text">
+          <div class="form-container">
+            <h3>I'd like to hear from you ! <img class="bubble" src="../docs/img/bubble.png" alt=""></h3> 
+            <form action="https://formspree.io/mgewogdz" method="POST">
+              <div class="fields-container">
+                <label for="">
+                  Name
+                  <input type="text" name="name" placeholder="Your name" />
+                </label>
+
+                <label for="">
+                  E-mail
+                  <input type="text" name="_replyto" placeholder="Your email" />
+                </label>
+              </div>
+              <div class="fields-container">
+                <label for="">
+                  Country
+                  <input
+                    type="text"
+                    name="country"
+                    placeholder="Your country"
+                  />
+                </label>
+
+                <label for="">
+                  Entreprise
+                  <input
+                    type="text"
+                    name="entreprise"
+                    placeholder="Your entreprise"
+                  />
+                </label>
+              </div>
+
+              <label for="">
+                  Message
+              <textarea name="message" placeholder="Your message" ></textarea>
+              <span class="textarea-counter">0 / 1000</span>
+            </label>
+
+              <!-- your other form fields go here -->
+
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
