@@ -438,7 +438,6 @@ ul {
   width: 70%;
   margin: 0 auto;
   line-height: 2rem;
-  border-style: outset;
   border-width: 5px;
 }
 
@@ -656,10 +655,11 @@ ul.tl li .timestamp {
   position: absolute;
   content: "";
   width: 0;
-  height: 3px;
+  height: 7px;
   left: 0;
-  top: -1px;
-  background-color: rgba(50, 28, 14, 1);
+  top: -3px;
+  background-color: rgb(104, 61, 34);
+  border-radius: 20px;
 }
 
 .progress.french::before {
