@@ -23,6 +23,9 @@ if (formFields.length > 0) {
     field.addEventListener("click", () => {
       field.focus();
     });
+    field.addEventListener("touchend", () => {
+      field.focus();
+    });
   });
 }
 
