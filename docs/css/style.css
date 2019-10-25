@@ -315,6 +315,7 @@ nav ul li:hover a span {
   justify-self: start;
   align-self: start;
   background-color: rgba(180, 149, 148, 0.6);
+  border-radius: 10px;
   padding: 0 3px 0 10px;
 }
 
