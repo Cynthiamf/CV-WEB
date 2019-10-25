@@ -627,6 +627,11 @@ ul.tl li .timestamp {
   vertical-align: middle;
 }
 
+.ts {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
 .wp,
 .laravel {
   object-fit: cover;
