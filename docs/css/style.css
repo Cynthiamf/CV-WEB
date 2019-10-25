@@ -314,6 +314,8 @@ nav ul li:hover a span {
   grid-area: 1 / 1 / 2 / 2;
   justify-self: start;
   align-self: start;
+  background-color: rgba(180, 149, 148, 0.6);
+  padding: 0 3px 0 10px;
 }
 
 .work {
