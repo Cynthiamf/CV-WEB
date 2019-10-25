@@ -48,13 +48,39 @@ if (textAreas) {
 }
 
 const anchors = document.querySelector(".anchors");
+const frag = document.createDocumentFragment();
+anchors.firstElementChild.appendChild(frag);
 
 const pageable = new Pageable("main", {
   interval: 400,
   delay: 300,
+  events: {
+    touch: false
+  },
+
   // orientation: "horizontal",
   // easing: easings.easeOutBounce,
-  onInit: init,
+  onInit: function() {
+    this.pages.forEach((page, i) => {
+      const id = page.id;
+      const text = `${id.charAt(0).toUpperCase()}${id.substr(1)}`;
+
+      // generate top menu
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+
+      a.href = `#${page.id}`;
+
+      a.textContent = text.replace("-", " ");
+
+      if (i === 0) {
+        a.classList.add("active");
+      }
+
+      li.appendChild(a);
+      frag.appendChild(li);
+    });
+  },
   onBeforeStart: function(x, y) {
     this.pages.forEach((page, i) => {
       page.firstElementChild.classList.remove("active");
@@ -72,30 +98,3 @@ const pageable = new Pageable("main", {
     });
   }
 });
-
-function init(pages) {
-  const frag = document.createDocumentFragment();
-
-  pages[0].firstElementChild.classList.add("active");
-  pages.forEach((page, i) => {
-    const id = page.id;
-    const text = `${id.charAt(0).toUpperCase()}${id.substr(1)}`;
-
-    // generate top menu
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-
-    a.href = `#${page.id}`;
-
-    a.textContent = text.replace("-", " ");
-
-    if (i === 0) {
-      a.classList.add("active");
-    }
-
-    li.appendChild(a);
-    frag.appendChild(li);
-  });
-
-  anchors.firstElementChild.appendChild(frag);
-}
