@@ -1051,6 +1051,9 @@ ul.tl li .timestamp {
     -webkit-transform: none;
     transform: none;
   }
+  .activities {
+    width: 99%;
+  }
 
   section:nth-child(1) .text {
     width: 100%;
