@@ -420,6 +420,7 @@ ul {
 }
 
 .cv {
+  display: inline-block;
   text-decoration: none;
   color: #ffffff;
   background-color: rgb(133, 92, 72);
@@ -1056,16 +1057,23 @@ ul.tl li .timestamp {
   }
 
   #right_side {
-    position: fixed;
-    margin-top: 8rem;
-    padding-bottom: 3rem;
+    position: relative;
+    padding-top: 3.5rem;
     height: auto;
     width: 100%;
+
+    background: url(../img/web-design-2038872_1920.jpg);
+    background-size: cover;
   }
 
   .right-content {
-    padding-top: 2rem;
+    padding: 2rem 0;
+    background-color: rgb(197, 137, 107, 0.9);
   }
+
+  .work-right-side, .social {
+    padding-bottom: 30px;
+}
 
   .photo-style {
     padding-bottom: 0;
