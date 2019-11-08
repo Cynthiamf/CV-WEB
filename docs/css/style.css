@@ -1157,9 +1157,11 @@ ul.tl li .timestamp {
 }
 
   .activities-container {
-    padding-top: 82px;
     padding-bottom: 2rem;
     width: auto;
+  }
+  .activities-container.collapse-menu-container {
+    padding-top: 82px;
   }
   .collapse-menu {
     font-size: 16px;
