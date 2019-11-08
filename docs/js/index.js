@@ -59,16 +59,14 @@ const anchorsLinks = document.querySelectorAll(".anchors ul li");
 
 anchorsLinks.forEach(anchor => {
   let link = anchor.querySelector("a");
-  link.addEventListener("click", (e)=> {
-
-    anchorsLinks.forEach(el =>{
+  link.addEventListener("click", e => {
+    anchorsLinks.forEach(el => {
       el.querySelector("a").classList.remove("active");
     });
-    
-    e.currentTarget.classList.add("active")
-  })
-});
 
+    e.currentTarget.classList.add("active");
+  });
+});
 
 const pageable = new Pageable("main", {
   interval: 400,
@@ -110,37 +108,53 @@ const pageable = new Pageable("main", {
     this.pages.forEach((page, i) => {
       page.firstElementChild.classList.toggle("active", i === this.index);
 
-      anchors.firstElementChild.children[
-        i
-      ].firstElementChild.classList.toggle("active", i === this.index);
+      anchors.firstElementChild.children[i].firstElementChild.classList.toggle(
+        "active",
+        i === this.index
+      );
     });
   }
 });
 
-
 if (window.innerWidth >= 767) {
   pageable.init();
-}
-else {
-  pageable.destroy();
-}
-
-window.addEventListener("orientationchange", function() {
-if (window.innerWidth <= 1024 && (window.orientation === 90 || window.orientation === -90)) {
-  pageable.destroy();
-} else if(window.innerWidth <= 767){
-  pageable.destroy();
 } else {
-  pageable.init();
+  pageable.destroy();
 }
-}, false);
 
-window.addEventListener("load", function() {
-  if (window.innerWidth <= 1024 && (window.orientation === 90 || window.orientation === -90)) {
+const controlPageable = () => {
+  if (
+    window.innerWidth <= 1024 &&
+    (window.orientation === 90 || window.orientation === -90)
+  ) {
     pageable.destroy();
-  }  else if(window.innerWidth <= 767){
+  } else if (window.innerWidth <= 767) {
     pageable.destroy();
   } else {
     pageable.init();
   }
-  }, false);
+};
+
+window.addEventListener(
+  "orientationchange",
+  function() {
+    controlPageable();
+  },
+  false
+);
+
+window.addEventListener(
+  "load",
+  function() {
+    controlPageable();
+  },
+  false
+);
+
+window.addEventListener(
+  "resize",
+  function() {
+    controlPageable();
+  },
+  false
+);
