@@ -930,19 +930,19 @@ ul.tl li .timestamp {
 }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .md-hide {
     display: none;
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
   .sm-hide {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) , screen and (orientation: landscape) and (max-width: 1024px){
+@media screen and (max-width: 768px) , screen and (orientation: landscape) and (max-width: 1024px){
   #bandeau {
     display: initial;
     right: auto;
@@ -1188,7 +1188,7 @@ ul.tl li .timestamp {
   }
 }
 
-@media screen and (orientation: portrait) and (min-width: 767px) and (max-width: 1024px) {
+@media screen and (orientation: portrait) and (min-width: 769px) and (max-width: 1024px) {
   .show-portrait {
     display: initial !important;
   }

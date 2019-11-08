@@ -116,7 +116,7 @@ const pageable = new Pageable("main", {
   }
 });
 
-if (window.innerWidth >= 767) {
+if (window.innerWidth >= 768) {
   pageable.init();
 } else {
   pageable.destroy();
@@ -128,7 +128,7 @@ const controlPageable = () => {
     (window.orientation === 90 || window.orientation === -90)
   ) {
     pageable.destroy();
-  } else if (window.innerWidth <= 767) {
+  } else if (window.innerWidth <= 768) {
     pageable.destroy();
   } else {
     pageable.init();
